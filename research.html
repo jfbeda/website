@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack Beda: Research</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <link rel="stylesheet" href="css/main.css">
+	<script src="js/main.js"></script>
+
+
+</head>
+<body>
+    
+    <div data-include="header.html"></div>
+
+
+    <main>
+		<!-- Content for the "Contact" tab goes here -->
+		<h2> My Research Projects </h2>
+
+		<p> Here I detail all of the summer-research-project type activities I have undertaken so far.</p>
+		
+		<hr>
+
+		<h3> The Monodromy Group, Coproducts, and Tensor Product Factorizations </h3>
+		<ul>
+			<li> Supervisor: <a href = "https://higgs.ph.ed.ac.uk/people/mcleod-andrew/" target = "_blank"> Dr. Andrew McLeod </a></li>
+			<li> Location: University of Edinburgh, United Kingdom</li>
+			<li> Dates: Summer 2024 
+
+		</ul>
+
+		<p> The monodromy group of a complex function with branch points provides an algebraic structure that encodes the behavior of the function as it is analytically continued around the branch points. For example, regardless of how many times the complex logarithm is analytically continued around the origin, each successive rotation only picks up a factor of \(i \pi\). The monodromy group of the logarithm, isomorphic to \((\mathbb{Z},+)\), or if you like \((i \pi \mathbb{Z},+)\), quantifies this structure. More interesting functions like the polylogarithms have more interesting monodromy groups. Computation of the monodromy group is aided by the <i>coproduct</i>. The coproduct is an important theoretical tool, but the required computations still remain difficult. For functions involving only a handful of terms, the expanded coproduct expression can contain upwards of 20 000 terms. It is necessary to factor these expressions, in particular to a minimal number of terms, in order to work with them. I introduced efficient computational algorithms for the factorization of coproduct expressions, and provide an implementation of such algorithms in Mathematica.
+
+			In this project I:
+
+		</p>
+			
+			<ul>
+				<li> Established a <a href = "https://github.com/jfbeda/coproduct-factoring" target = "_blank"> git repository </a> including Mathematica packages for handling coproducts, symbols, and minimally factoring tensor product expressions. </li>
+				<li> Advanced my knowledge of complex analysis, theoretical computer science, abstract algebra, Mathematica, and typesetting Latex to clearly and unambiguously communicate mathematics. </li>
+			</ul>
+
+			<figure style="max-width: 500px; margin: 20px auto;">
+				<a href="images/tensor_product_poster.pdf" target="_blank">
+					<img src="images/tensor_product_poster.jpg" alt="tensor product poster" style="width: 100%; height: auto;">
+				</a>
+				<figcaption style="text-align: center;">Fig. 1: Click to view my poster on factoring tensor product expressions.</figcaption>
+			</figure>
+
+		<hr>
+		<h3> Microscope Synchronisation with Raspberryi Pi Pico </h3>
+		<ul>
+			<li> Supervisor: <a href = "https://en.uit.no/ansatte/person?p_document_id=617278" target = "_blank"> Dr. Florian Ströhl </a></li>
+			<li> Location: University of Tromsø (UiT), Norway</li>
+			<li> Dates: Summer 2023 
+
+		</ul>
+
+		<p> Dr. Florian Ströhl's research requires synchronizing of a plane laser with a rolling-shutter camera at high precision. The camera takes a rolling shutter picture as the plane laser sweeps through a biological (or any) sample, such that a particular section of the sample is only illuminated when the camera is exposing that part of the image. The camera outputs an electrical pulse 
+			signal when it is exposing (which drops to zero at the end of the frame). My project was to recieve as input this pulse signal to a raspberry pi pico, and produce as output, 
+			using a DAC (digital to analogue converter), a voltage that steadily increases when the camera is exposing, and drops to zero when the camera is not exposing (almost like a sawtooth wave). This output voltage can be connected to a galvometer 
+			so that the plane laser moves in sync with the camera (Fig. 2). In this project I :
+		</p>
+			
+			<ul>
+				<li> Wired up various test circuits on breadboards using the raspberry pi pico and the DAC</li>
+				<li> Coded software for the raspberry pi pico in C, MicroPython, and Arduino (primarily C) </li>
+				<li> Used the SPI (serial peripheral interface) protocol to transfer data from the raspberry pi pico to the DAC</li>
+				<li> Soldered together a circuit board comprising the raspberry pi pico and DAC</li>
+				<li> 3D printed a housing box for the soldered circuit board</li>
+				<li> Used an oscilloscope extensively for testing and debugging</li>
+				<li> Succeeded in achieving ~10 μs response times between input signal receipt and output signal display</li>
+			</ul>
+
+			<figure style="max-width: 500px; margin: 20px auto;">
+				<a href="images/circuit_board.jpg" target="_blank">
+				<img src="images/circuit_board_thumbnail.jpg" alt="circuit board, computer, oscilloscope" style="width: 100%; height: auto;">
+				</a>
+				<figcaption style="text-align: center;">Fig. 2: The completed circuit board takes a square wave from the camera as input (green trace on the oscilloscope), and produces a sawtooth-like wave as output (blue trace).</figcaption>
+			</figure>
+		
+		<hr>
+		<h3> Birefringence of Packing Tape  </h3>
+		<ul>
+			<li> Supervisor: <a href = "http://www.aaronslepkov.com/" target = "_blank"> Dr. Aaron Slepkov </a></li>
+			<li> Location: Trent University, Peterborough, ON, Canada</li>
+			<li> Dates: Summer 2020 
+
+		</ul>
+
+		<p> Dr. Aaron Slepkov had at the time been studying the birefringence of various household tapes (packing tape/cellotape/sticky tape), with the aim of collecting sufficient data 
+			on the tapes to predict the colours produced when the tapes are viewed between crossed polarizers, at arbitrary angles. When viewed between crossed polarizers, birefringent objects, like the 
+			tapes, appear vividly coloured, and this phenomenon can be used to create pretty pictures among other applications (Fig. 3). In this research project 
+			I assisted by taking large quantities of spectrometer measurements on the tapes, to verify the data previously gathered by Dr. Slepkov.
+
+			<br><br>
+			Related to this project is an <a href = "https://iaps.info/2023/05/01/jiaps-may-article-of-the-month-beautiful-birefringence/" target = "_blank"> article </a>  I wrote, that was listed as the jIAPS (journal of the international association of physics students) article of the month on birefringence.
+
+		</p>
+
+		<figure style="max-width: 500px; margin: 20px auto;">
+			<a href="images/packing_tape.jpeg" target="_blank">
+			<img src="images/packing_tape_thumbnail.jpeg" alt="packing tape" style="width: 100%; height: auto;">
+			</a>
+			<figcaption style="text-align: center;">Fig. 3: A stained glass like effect can be created by viewing layered tape through crossed polarizers.</figcaption>
+		</figure>
+
+    </main>
+	
+	
+	<div data-include="footer.html"></div>
+
+</body>
+</html>

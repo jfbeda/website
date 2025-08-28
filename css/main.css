@@ -1,0 +1,89 @@
+body {
+    font-family: Verdana, sans-serif;
+    background-color: #ffffff;
+    margin: 40px;
+    padding: 0px;
+    line-height: 1.6;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+header {
+    background: #fff;
+    color: #fff;
+    min-height: 70px;
+    margin-bottom: 0; /* Remove bottom margin */
+        padding-bottom: 0px; /* You can adjust this value to add or reduce space */
+}
+header a {
+    color: #007bff;
+    text-decoration: none;
+    text-transform: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+header a:hover {
+color: #0056b3; /* Darker blue on hover */
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+.tab-content {
+    display: none;
+}
+.tab-content.active {
+    display: block;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* Adds extra horizontal spacing between td elements. Used to make tabs at top further apart */
+.tab-row td {
+    padding-right: 40px;
+}
+
+.button {
+display: inline-block;
+padding: 10px 20px;
+margin-top: 00px;
+color: #fff;
+background-color: #007bff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 16px;
+}
+.button:hover {
+background-color: #0056b3;
+}
+#archival {
+font-family: "Times New Roman", Times, serif;
+}
+
+h1 {
+    color: #111; 
+    display: block; 
+}
+
+.tab-content {
+    display: none;
+}
+.tab-content.active {
+    display: block;
+}
+.last-updated {
+    text-align: center;
+    margin-top: 20px;
+}
