@@ -15,15 +15,26 @@
 
 
     <main>
-		<h2>Curriculum Vitae</h2>
+        <h2>Curriculum Vitae</h2>
 
-		<p> Click the button below to download my current CV. </p>
-		
-		<button class="button" onclick="downloadCV()"> Download my CV </button>
+        <p>You can view my CV below. It was last updated September, 2024. </p>
 
-		<p>Of course, if you are considering offering me a position, I would be happy to provide a cover letter, references, and/or a tailored version of my CV. </p>
+        <!-- Inline PDF viewer -->
+        <figure class="pdf-viewer" aria-label="CV preview">
+            <iframe
+                src="files/Jack_Beda_CV.pdf#view=FitH&zoom=page-width"
+                title="Jack Beda — CV"
+                loading="lazy"
+                style="width:100%; height:75vh; border:1px solid #ddd; border-radius:12px;"
+            ></iframe>
+        </figure>
 
-	</main>
+        <p>
+            Of course, if you are considering offering me a position,
+            I would be happy to provide a cover letter, references,
+            and/or a tailored version of my CV.
+        </p>
+    </main>
 
     <div data-include="footer.html"></div>
 	

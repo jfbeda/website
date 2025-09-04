@@ -26,6 +26,37 @@
 		
 		<hr>
 
+		<h3> Quantum Computing with Trapped Ions</h3>
+		<ul>
+			<li> Supervisor: <a href = "https://phys.washington.edu/people/boris-blinov" target = "_blank"> Prof. Boris Blinov </a></li>
+			<li> Location: University of Washington, United States</li>
+			<li> Dates: Summer 2025 
+
+		</ul>
+
+		<p> I completed a 10-week REU (Research Experience for Undergraduates) at the University of Washington in Prof. Boris Blinov's quantum computing lab. The group investigates the use of ion traps for the purposes of quantum computation. I created a <a href = "https://github.com/jfbeda/trapped_ion_simulation" target = "_blank"> Git repository</a> for numerically simulating 2D ion traps in Python. Specifically, I simulated the "quenching" process, whereby the external trap potential is rapidly altered, which changes the minimum-energy ion configuration favoured by the system. Such quenches can produce defects in the resulting crystals, which we investigated. My code closely matches experimental results. Fig. 1 shows the observed minimum-energy configuration of 28 Barium-138 ions (left) and my code’s predicted arrangement (right), in close agreement.
+
+		</p>
+			
+			<figure style="max-width: 800px; margin: 20px auto; text-align: center;">
+				<div style="display: flex; gap: 10px; justify-content: center;">
+				  <a href="images/ion.jpg" target="_blank" style="flex: 1;">
+					<img src="images/ion.jpg" alt="ion" style="width: 100%; height: auto; border-radius: 6px;">
+				  </a>
+			  
+				  <a href="images/ion_sim.pdf" target="_blank" style="flex: 1;">
+					<img src="images/ion_sim.jpg" alt="ion_sim" style="width: 100%; height: auto; border-radius: 6px;">
+				  </a>
+				</div>
+			  
+				<figcaption style="margin-top: 10px;">
+				  Fig. 1: Experimentally observed minimum energy configuration of 28 Barium-138 ions in an ion trap (left) and my theoretical prediction of the same system (right). Note the three ions seemingly missing from the (left) experimental image are simply an artefact from the imaging process.
+				</figcaption>
+			  </figure>
+			  
+
+		<hr>
+
 		<h3> The Monodromy Group, Coproducts, and Tensor Product Factorizations </h3>
 		<ul>
 			<li> Supervisor: <a href = "https://higgs.ph.ed.ac.uk/people/mcleod-andrew/" target = "_blank"> Dr. Andrew McLeod </a></li>
@@ -41,7 +72,7 @@
 		</p>
 			
 			<ul>
-				<li> Established a <a href = "https://github.com/jfbeda/coproduct-factoring" target = "_blank"> git repository </a> including Mathematica packages for handling coproducts, symbols, and minimally factoring tensor product expressions. </li>
+				<li> Established a <a href = "https://github.com/jfbeda/coproduct-factoring" target = "_blank"> Git repository</a> including Mathematica packages for handling coproducts, symbols, and minimally factoring tensor product expressions. </li>
 				<li> Advanced my knowledge of complex analysis, theoretical computer science, abstract algebra, Mathematica, and typesetting Latex to clearly and unambiguously communicate mathematics. </li>
 			</ul>
 
@@ -49,7 +80,7 @@
 				<a href="images/tensor_product_poster.pdf" target="_blank">
 					<img src="images/tensor_product_poster.jpg" alt="tensor product poster" style="width: 100%; height: auto;">
 				</a>
-				<figcaption style="text-align: center;">Fig. 1: Click to view my poster on factoring tensor product expressions.</figcaption>
+				<figcaption style="text-align: center;">Fig. 2: Click to view my poster on factoring tensor product expressions.</figcaption>
 			</figure>
 
 		<hr>
@@ -64,7 +95,7 @@
 		<p> Dr. Florian Ströhl's research requires synchronizing of a plane laser with a rolling-shutter camera at high precision. The camera takes a rolling shutter picture as the plane laser sweeps through a biological (or any) sample, such that a particular section of the sample is only illuminated when the camera is exposing that part of the image. The camera outputs an electrical pulse 
 			signal when it is exposing (which drops to zero at the end of the frame). My project was to recieve as input this pulse signal to a raspberry pi pico, and produce as output, 
 			using a DAC (digital to analogue converter), a voltage that steadily increases when the camera is exposing, and drops to zero when the camera is not exposing (almost like a sawtooth wave). This output voltage can be connected to a galvometer 
-			so that the plane laser moves in sync with the camera (Fig. 2). In this project I :
+			so that the plane laser moves in sync with the camera (Fig. 3). In this project I :
 		</p>
 			
 			<ul>
@@ -81,25 +112,25 @@
 				<a href="images/circuit_board.jpg" target="_blank">
 				<img src="images/circuit_board_thumbnail.jpg" alt="circuit board, computer, oscilloscope" style="width: 100%; height: auto;">
 				</a>
-				<figcaption style="text-align: center;">Fig. 2: The completed circuit board takes a square wave from the camera as input (green trace on the oscilloscope), and produces a sawtooth-like wave as output (blue trace).</figcaption>
+				<figcaption style="text-align: center;">Fig. 3: The completed circuit board takes a square wave from the camera as input (green trace on the oscilloscope), and produces a sawtooth-like wave as output (blue trace).</figcaption>
 			</figure>
 		
 		<hr>
 		<h3> Birefringence of Packing Tape  </h3>
 		<ul>
-			<li> Supervisor: <a href = "http://www.aaronslepkov.com/" target = "_blank"> Dr. Aaron Slepkov </a></li>
+			<li> Supervisor: <a href = "http://www.aaronslepkov.com/" target = "_blank"> Prof. Aaron Slepkov </a></li>
 			<li> Location: Trent University, Peterborough, ON, Canada</li>
 			<li> Dates: Summer 2020 
 
 		</ul>
 
-		<p> Dr. Aaron Slepkov had at the time been studying the birefringence of various household tapes (packing tape/cellotape/sticky tape), with the aim of collecting sufficient data 
+		<p> Prof. Aaron Slepkov had at the time been studying the birefringence of various household tapes (packing tape/cellotape/sticky tape), with the aim of collecting sufficient data 
 			on the tapes to predict the colours produced when the tapes are viewed between crossed polarizers, at arbitrary angles. When viewed between crossed polarizers, birefringent objects, like the 
-			tapes, appear vividly coloured, and this phenomenon can be used to create pretty pictures among other applications (Fig. 3). In this research project 
+			tapes, appear vividly coloured, and this phenomenon can be used to create pretty pictures among other applications (Fig. 4). In this research project 
 			I assisted by taking large quantities of spectrometer measurements on the tapes, to verify the data previously gathered by Dr. Slepkov.
 
 			<br><br>
-			Related to this project is an <a href = "https://iaps.info/2023/05/01/jiaps-may-article-of-the-month-beautiful-birefringence/" target = "_blank"> article </a>  I wrote, that was listed as the jIAPS (journal of the international association of physics students) article of the month on birefringence.
+			Related to this project is an <a href = "https://iaps.info/2023/05/01/jiaps-may-article-of-the-month-beautiful-birefringence/" target = "_blank"> article </a>  I wrote, that was listed as the jIAPS (Journal of the International Association of Physics Students) article of the month on birefringence.
 
 		</p>
 
@@ -107,7 +138,7 @@
 			<a href="images/packing_tape.jpeg" target="_blank">
 			<img src="images/packing_tape_thumbnail.jpeg" alt="packing tape" style="width: 100%; height: auto;">
 			</a>
-			<figcaption style="text-align: center;">Fig. 3: A stained glass like effect can be created by viewing layered tape through crossed polarizers.</figcaption>
+			<figcaption style="text-align: center;">Fig. 4: A stained glass like effect can be created by viewing layered tape through crossed polarizers.</figcaption>
 		</figure>
 
     </main>
